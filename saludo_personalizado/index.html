@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1. Saludo personalizado — DOM y eventos</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <main class="card">
+        <h1>Saludo personalizado</h1>
+        <p class="subtitle">Escribe tu nombre para recibir un saludo en la página.</p>
+
+        <form id="saludo-form" class="form-group" novalidate>
+        <label for="nombre-input">Tu nombre</label>
+        <div class="controls">
+            <input
+            type="text"
+            id="nombre-input"
+            name="nombre"
+            placeholder="Ej. María"
+            autocomplete="name"
+            />
+            <button type="submit" id="saludar-btn">Saludar</button>
+        </div>
+        </form>
+
+        <p id="resultado-saludo" class="resultado" aria-live="polite"></p>
+    </main>
+
+    <script src="app.js" defer></script>
+    </body>
+    </html>
